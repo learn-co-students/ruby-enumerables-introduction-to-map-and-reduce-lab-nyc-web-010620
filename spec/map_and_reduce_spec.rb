@@ -6,7 +6,7 @@ describe 'my own map-like methods' do
       expect(map_to_negativize([1, 2, 3, -9])).to eq([-1, -2, -3, 9])
     end
   end
-
+  
   describe "map_to_no_change returns an array with the original values" do
     it "transforms correctly" do
       dune = ["paul", "gurney", "vladimir", "jessica", "chani"]
@@ -35,6 +35,7 @@ describe 'my own reduce-like methods' do
     end
   end
 
+  
   describe "reduce_to_total returns a running total when given a starting point" do
     it "reduces correctly" do
       source_array = [1,2,3]
@@ -42,6 +43,8 @@ describe 'my own reduce-like methods' do
       expect(reduce_to_total(source_array, starting_point)).to eq(106)
     end
   end
+  
+
 
   describe "reduce_to_all_true returns true when all values are truthy" do
     it "reduces correctly" do
